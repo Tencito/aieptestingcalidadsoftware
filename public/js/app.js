@@ -1,15 +1,34 @@
 function guardarFicha() {
+    // Obtener los valores de los campos
+    const rut = document.getElementById('rut').value.trim();
+    const nombres = document.getElementById('nombres').value.trim();
+    const apellidos = document.getElementById('apellidos').value.trim();
+    const direccion = document.getElementById('direccion').value.trim();
+    const ciudad = document.getElementById('ciudad').value.trim();
+    const telefono = document.getElementById('telefono').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const fechaNacimiento = document.getElementById('fechaNacimiento').value.trim();
+    const estadoCivil = document.getElementById('estadoCivil').value.trim();
+    const comentarios = document.getElementById('comentarios').value.trim(); // Campo opcional
+
+    // Validación de campos obligatorios
+    if (!rut || !nombres || !apellidos || !direccion || !ciudad || !telefono || !email || !fechaNacimiento || !estadoCivil) {
+        alert('Por favor, complete todos los campos obligatorios antes de guardar.');
+        return; // Detener el guardado si hay campos vacíos
+    }
+
+    // Crear objeto ficha
     const ficha = {
-        rut: document.getElementById('rut').value,
-        nombres: document.getElementById('nombres').value,
-        apellidos: document.getElementById('apellidos').value,
-        direccion: document.getElementById('direccion').value,
-        ciudad: document.getElementById('ciudad').value,
-        telefono: document.getElementById('telefono').value,
-        email: document.getElementById('email').value,
-        fechaNacimiento: document.getElementById('fechaNacimiento').value,
-        estadoCivil: document.getElementById('estadoCivil').value,
-        comentarios: document.getElementById('comentarios').value
+        rut,
+        nombres,
+        apellidos,
+        direccion,
+        ciudad,
+        telefono,
+        email,
+        fechaNacimiento,
+        estadoCivil,
+        comentarios // Campo opcional
     };
 
     // Guardar ficha en localStorage
