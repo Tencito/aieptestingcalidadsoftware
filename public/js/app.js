@@ -35,5 +35,11 @@ function buscarPorApellido() {
 }
 
 function cerrarFormulario() {
-    window.close();
+    // Mostrar un mensaje al usuario
+    alert('Gracias por usar la aplicación. Puedes cerrar esta ventana manualmente.');
+
+    // O redirigir a otra página
+    window.location.href = 'https://www.google.com'; // Reemplaza con la URL a la que desees redirigir
+}
+
 }
