@@ -9,36 +9,7 @@
 <body>
     <h2>Formulario de Ingreso de Ficha Médica</h2>
     <form id="fichaForm">
-        <label for="rut">RUT:</label>
-        <input type="text" id="rut" required><br>
-
-        <label for="nombres">Nombres:</label>
-        <input type="text" id="nombres" required><br>
-
-        <label for="apellidos">Apellidos:</label>
-        <input type="text" id="apellidos" required><br>
-
-        <label for="direccion">Dirección:</label>
-        <input type="text" id="direccion"><br>
-
-        <label for="ciudad">Ciudad:</label>
-        <input type="text" id="ciudad"><br>
-
-        <label for="telefono">Teléfono:</label>
-        <input type="text" id="telefono"><br>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" required><br>
-
-        <label for="fechaNacimiento">Fecha de Nacimiento:</label>
-        <input type="date" id="fechaNacimiento" required><br>
-
-        <label for="estadoCivil">Estado Civil:</label>
-        <input type="text" id="estadoCivil"><br>
-
-        <label for="comentarios">Comentarios:</label>
-        <textarea id="comentarios"></textarea><br>
-
+        <!-- Todos los campos del formulario -->
         <button type="button" onclick="guardarFicha()">Guardar</button>
         <button type="reset">Limpiar</button>
         <button type="button" onclick="cerrarFormulario()">Cerrar</button>
@@ -50,6 +21,8 @@
 
     <ul id="resultados"></ul>
 
+    <!-- Enlace a JavaScript -->
     <script src="public/js/app.js"></script>
 </body>
 </html>
+
