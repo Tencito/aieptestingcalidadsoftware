@@ -11,13 +11,13 @@ function guardarFicha() {
     const estadoCivil = document.getElementById('estadoCivil').value.trim();
     const comentarios = document.getElementById('comentarios').value.trim(); // Campo opcional
 
-    // Validación de campos obligatorios
+    // Validación de campos 
     if (!rut || !nombres || !apellidos || !direccion || !ciudad || !telefono || !email || !fechaNacimiento || !estadoCivil) {
         alert('Por favor, complete todos los campos obligatorios antes de guardar.');
         return; // Detener el guardado si hay campos vacíos
     }
 
-    // Crear objeto ficha
+    // objeto ficha
     const ficha = {
         rut,
         nombres,
@@ -54,9 +54,9 @@ function buscarPorApellido() {
 }
 
 function cerrarFormulario() {
-    // Mostrar un mensaje al usuario
+    // Mostrar un mensaje
     alert('Gracias por usar la aplicación. Puedes cerrar esta ventana manualmente.');
 
-    // Redirigir a otra página como alternativa al cierre de ventana
+    // Redirige a otra página como alternativa al cierre de ventana
     window.location.href = 'https://www.google.com'; // Reemplaza con la URL a la que desees redirigir
 }
