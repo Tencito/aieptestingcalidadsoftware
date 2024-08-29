@@ -57,8 +57,7 @@ function cerrarFormulario() {
     // Mostrar un mensaje al usuario
     alert('Gracias por usar la aplicación. Puedes cerrar esta ventana manualmente.');
 
-    // O redirigir a otra página
+    // Redirigir a otra página como alternativa al cierre de ventana
     window.location.href = 'https://www.google.com'; // Reemplaza con la URL a la que desees redirigir
 }
 
-}
