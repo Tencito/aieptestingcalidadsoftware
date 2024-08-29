@@ -60,4 +60,3 @@ function cerrarFormulario() {
     // Redirigir a otra página como alternativa al cierre de ventana
     window.location.href = 'https://www.google.com'; // Reemplaza con la URL a la que desees redirigir
 }
-
