@@ -1,11 +1,11 @@
 function esEmailValido(email) {
-    // Expresión regular para validar el formato del email
+    // validar el formato del email
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
 }
 
 function esRUTValido(rut) {
-    // Expresión regular simple para validar el formato del RUT
+    // validar el formato del RUT
     const rutRegex = /^\d{1,2}\.\d{3}\.\d{3}-[0-9kK]$/;
     return rutRegex.test(rut);
 }
