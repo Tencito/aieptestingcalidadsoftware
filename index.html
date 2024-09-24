@@ -9,7 +9,7 @@
 <body>
     <h2>Formulario de Ingreso de Ficha Médica</h2>
     <form id="fichaForm">
-        <label for="rut">RUT:</label>
+        <label for="rut">RUT (Ej: 12.345.678-9):</label>
         <input type="text" id="rut" required><br>
 
         <label for="nombres">Nombres:</label>
@@ -39,7 +39,6 @@
         <label for="comentarios">Comentarios:</label>
         <textarea id="comentarios"></textarea><br>
 
-        <!-- Botones para evitar el comportamiento por defecto de submit -->
         <button type="button" onclick="guardarFicha()">Guardar</button>
         <button type="reset">Limpiar</button>
         <button type="button" onclick="cerrarFormulario()">Cerrar</button>
@@ -51,8 +50,6 @@
 
     <ul id="resultados"></ul>
 
-    <!--  JavaScript -->
     <script src="public/js/app.js"></script>
 </body>
 </html>
-
